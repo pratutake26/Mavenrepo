@@ -70,7 +70,7 @@ public class MicrositeScreenBase {
 
 
     public static void initialization() throws IOException {
-        System.setProperty("webdriver.chrome.driver", "/Users/seekekrishna/Documents/selenium/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/seekekrishna/Documents/MicrositeScreenLoadTime/MicrositeScreenLoadTime/chromedriver");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
