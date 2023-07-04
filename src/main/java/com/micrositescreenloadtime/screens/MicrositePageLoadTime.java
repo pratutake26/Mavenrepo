@@ -13,8 +13,7 @@ import java.io.FileNotFoundException;
 import java.time.Duration;
 import java.util.Objects;
 
-import static com.micrositescreenloadtime.screens.MicrositeScreenConstants.AllStudentBanner;
-
+import static com.micrositescreenloadtime.screens.MicrositeScreenConstants.*;
 
 
 public class MicrositePageLoadTime extends MicrositeScreenBase {
@@ -44,12 +43,19 @@ public class MicrositePageLoadTime extends MicrositeScreenBase {
         }
         else if(Objects.equals(student,"Teacher")){
             WebDriverWait wait = new WebDriverWait(driver,10);
-            wait.until(ExpectedConditions.elementToBeClickable(AllStudentBanner));
+            wait.until(ExpectedConditions.elementToBeClickable(AllTeacherBanner));
             // Capture time after page load
             long endTime = System.currentTimeMillis();
             // Compute time
             long loadingTime = endTime - startTime;
             System.out.println("Teacher Landing Page load time in seconds: " + loadingTime/1000);
+        }
+        else if (Objects.equals(student,"PressPage")){
+            WebDriverWait wait = new WebDriverWait(driver,100);
+            wait.until(ExpectedConditions.elementToBeClickable(PressPage));
+            long endTime = System.currentTimeMillis();
+            long loadingTime = endTime - startTime;
+            System.out.println("Press Release  Landing Page load time in seconds: " + loadingTime/1000);
         }
 
 

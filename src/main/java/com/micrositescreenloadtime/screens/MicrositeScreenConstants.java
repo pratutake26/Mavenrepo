@@ -16,4 +16,7 @@ public class MicrositeScreenConstants extends MicrositeScreenBase {
     public static WebElement AllStudentBanner;
     @FindBy(xpath = "//img[@class='web persondesktop']")
     public static WebElement AllTeacherBanner;
+
+    @FindBy(xpath = "//body[@class='page-template page-template-template-press_release page-template-template-press_release-php page page-id-40414 langis-en']")
+    public static WebElement PressPage;
 }
