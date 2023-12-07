@@ -12,9 +12,9 @@ public class MicrositeScreenConstants extends MicrositeScreenBase {
         super();
         PageFactory.initElements(driver, this);
     }
-    @FindBy(xpath = "//img[@class='web persondesktop']")
+    @FindBy(xpath = "//img[@title='Embibe']")
     public static WebElement AllStudentBanner;
-    @FindBy(xpath = "//img[@class='web persondesktop']")
+    @FindBy(xpath = "//img[@title='Embibe']")
     public static WebElement AllTeacherBanner;
 
     @FindBy(xpath = "//body[@class='page-template page-template-template-press_release page-template-template-press_release-php page page-id-40414 langis-en']")

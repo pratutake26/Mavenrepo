@@ -26,40 +26,40 @@ public class MicrositePageLoadTimeTest extends MicrositeScreenBase {
         MPLT = new MicrositePageLoadTime();
         MSC = new MicrositeScreenConstants();
     }
-//
-//    @Test(priority = 1)
+
+ //   @Test(priority = 1)
 //    public void madhyaPradeshStudentTimeTest() throws InterruptedException {
+  //      String Student = "Student";
+   //     MPLT.intiallTime();
+   //     driver.get(prop.getProperty("MSurl"));
+    //    System.out.println("MadhyaPradesh Student Landing Page Microsite");
+     //   MPLT.pageBanner(Student);
+  //        }
+   // @Test(priority = 2)
+   // public void madhyaPradeshTeacherTimeTest(){
+    //  String Teacher = "Teacher";
+      //  MPLT.intiallTime();
+      //  driver.get(prop.getProperty("MTurl"));
+     //  System.out.println("MadhyaPradesh Teacher Landing Page Microsite");
+     //  MPLT.pageBanner(Teacher);
+   //   }
+   // @Test(priority = 3)
+  //  public void goaStudentTimeTest(){
 //        String Student = "Student";
-//        MPLT.intiallTime();
-//        driver.get(prop.getProperty("MSurl"));
-//        System.out.println("MadhyaPradesh Student Landing Page Microsite");
-//        MPLT.pageBanner(Student);
-//    }
-//    @Test(priority = 2)
-//    public void madhyaPradeshTeacherTimeTest(){
-//        String Teacher = "Teacher";
-//        MPLT.intiallTime();
-//        driver.get(prop.getProperty("MTurl"));
-//        System.out.println("MadhyaPradesh Teacher Landing Page Microsite");
-//        MPLT.pageBanner(Teacher);
-//    }
-//    @Test(priority = 3)
-//    public void goaStudentTimeTest(){
-//        String Student = "Student";
-//        MPLT.intiallTime();
-//        driver.get(prop.getProperty("GSurl"));
-//        System.out.println("Goa Student Landing Page Microsite");
-//        MPLT.pageBanner(Student);
-//    }
-//    @Test(priority = 4)
-//    public void goaTeacherTimeTest(){
-//        String Teacher = "Teacher";
-//        MPLT.intiallTime();
-//        driver.get(prop.getProperty("GTurl"));
+       // MPLT.intiallTime();
+     //   driver.get(prop.getProperty("GSurl"));
+    //    System.out.println("Goa Student Landing Page Microsite");
+    //    MPLT.pageBanner(Student);
+    //}
+  //   @Test(priority = 4)
+  //      public void goaTeacherTimeTest(){
+    //     String Teacher = "Teacher";
+//         MPLT.intiallTime();
+//driver.get(prop.getProperty("GTurl"));
 //        System.out.println("Goa Teacher Landing Page Microsite");
-//        MPLT.pageBanner(Teacher);
-//    }
-//    @Test(priority = 5)
+//       MPLT.pageBanner(Teacher);
+//   }
+    //   @Test(priority = 5)
 //    public void assamStudentTimeTest(){
 //        String Student = "Student";
 //        MPLT.intiallTime();
@@ -456,7 +456,7 @@ public class MicrositePageLoadTimeTest extends MicrositeScreenBase {
 //    }
     @Test(priority = 53)
     public void pressReleasePageTest(){
-        String Student = "PressPage";
+        String Student = "Student";
         MPLT.intiallTime();
         driver.get(prop.getProperty("PRurl"));
         System.out.println("Press Release Page ScreenLoad Time");
@@ -464,16 +464,25 @@ public class MicrositePageLoadTimeTest extends MicrositeScreenBase {
     }
     @Test(priority = 54)
     public void ADPTest(){
-        String Student = "Student";
+        String Student = "Teacher";
         MPLT.intiallTime();
         driver.get(prop.getProperty("ADPurl"));
         System.out.println("ADP Microsite Page ScreenLoad Time");
         MPLT.pageBanner(Student);
     }
+
     @Test(priority = 55)
+    public void embibeStudentTest(){
+        String Student = "Student";
+        MPLT.intiallTime();
+        driver.get(prop.getProperty("ESurl"));
+        System.out.println("Embibee Page ScreenLoad Time");
+        MPLT.pageBanner(Student);
+    }
+    @Test(priority = 56)
     public void networkSpeed() throws InterruptedException {
         driver.navigate().to("https://fast.com/");
-        Thread.sleep(100000);
+        Thread.sleep(15000);
         driver.findElement(By.xpath("//span[@id='speed-progress-indicator-icon']")).click();
     }
     @AfterMethod
